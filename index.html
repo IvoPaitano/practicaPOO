@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-light bg-light">
+        <a href="" class="navbar-brand">
+            Product App
+        </a>
+    </nav>
+
+    <div class="container">
+        <!-- APPLICATION -->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add a book</h4>
+                    </div>
+                    <form id="book-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="title" placeholder="Title" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="gender"placeholder="Gender" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="year" value="2020" min="1800" placeholder="Year of publication" class="form-control" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="author"placeholder="Author" class="form-control" autocomplete="off" required>
+                        </div>
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="book-list" class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
